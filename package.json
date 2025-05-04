@@ -1,0 +1,38 @@
+{
+  "name": "puntos",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer",
+    "flow": "flow"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-private-methods": "^7.27.1",
+    "@babel/runtime": "^7.23.5",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "bcrypt": "^5.1.1",
+    "meteor-node-stubs": "^1.2.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.27.1",
+    "@babel/preset-flow": "^7.27.1",
+    "@fontsource/roboto": "^5.2.5",
+    "babel-plugin-syntax-hermes-parser": "^0.28.1",
+    "flow-bin": "^0.269.1",
+    "lodash": "^4.17.21"
+  }
+}
