@@ -9,6 +9,10 @@
     "flow": "flow"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.27.1",
+    "@babel/preset-flow": "^7.27.1",
+    "@fontsource/roboto": "^5.2.5",
+    "babel-plugin-syntax-hermes-parser": "^0.28.1",
     "@babel/plugin-transform-private-methods": "^7.27.1",
     "@babel/runtime": "^7.23.5",
     "@emotion/react": "^11.14.0",
@@ -18,7 +22,8 @@
     "bcrypt": "^5.1.1",
     "meteor-node-stubs": "^1.2.12",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "lodash": "^4.17.21"
   },
   "meteor": {
     "mainModule": {
@@ -28,11 +33,6 @@
     "testModule": "tests/main.js"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.27.1",
-    "@babel/preset-flow": "^7.27.1",
-    "@fontsource/roboto": "^5.2.5",
-    "babel-plugin-syntax-hermes-parser": "^0.28.1",
-    "flow-bin": "^0.269.1",
-    "lodash": "^4.17.21"
+    "flow-bin": "^0.269.1"
   }
 }
